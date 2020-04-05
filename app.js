@@ -1,62 +1,3 @@
-// var request = require('sync-request');
-// var res = request('POST', 'https://wfw.scu.edu.cn/a_scu/api/sso/check', {
-//     headers: {
-//         'Host': 'wfw.scu.edu.cn',
-       
-//         'Referer':' https://wfw.scu.edu.cn/site/polymerization/polymerizationLogin?redirect=https%3A%2F%2Fwfw.scu.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex&from=wap',
-
-//         'Accept-Language': 'en-US,en;q=0.5',
-
-//         'Accept-Encoding': 'gzip, deflate',
-
-
-
-//         'Content-Type': 'application/x-www-form-urlencoded',
-
-//         'X-Requested-With': 'XMLHttpRequest',
-
-//         'Content-Length': ' 107',
-
-//         'Connection': 'close'
-
-//     },
-
-
-//     body: "username=" + 2018141463137 + "password=" + 721721 + "redirect=" + 'https%3A%2F%2Fwfw.scu.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex'
-// });
-//  console.log(res.getBody('utf8'));
-
-
-//  // var postData=QueryString.stringify({
-// //     'username':2018141463137,
-// //     'password':721721
-
-// // })
-// // var options = {
-// //     'Host': 'wfw.scu.edu.cn',
-
-// //     'Accept-Language': 'en-US,en;q=0.5',
-
-// //     'Accept-Encoding': 'gzip, deflate',
-
-// //     'Content-Type': 'application/x-www-form-urlencoded',
-
-// //     'X-Requested-With': 'XMLHttpRequest',
-
-// //     'Content-Length': ' 107',
-
-// //     'Connection': 'close',
-// //     headers:{
-// //         'Content-Type': 'application/x-www-form-urlencoded',
-// //         'Content-Length': postData.length
-// //     }
-// // }
-
-/**
- * nodejs的request模块模拟登陆开源中国
- */
-//密码加密模块
-
 var request = require('request');
 var time =require('china-time')
 var schedule = require('node-schedule');
@@ -73,7 +14,7 @@ let opts = {
     url: url,
     method: 'POST',
     headers: headers,
-    form:'username=2018141463137&password=721721'
+    form:'username=2018141463137&password=******'
 };
 
 //模拟登陆
